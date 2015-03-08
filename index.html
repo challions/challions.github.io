@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>挑战雄狮</title>
+	<meta name="author" content="千橙" />
+	<meta name="description" content="挑战雄狮,唤醒你内心的睡狮" />
+	<meta name="keywords"  content="挑战雄狮,挑战狮子,挑战群狮,战胜自己,challions,Challange Lions" />
+	<meta name="Resource-type" content="html" />
+
+
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="./css/examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="./libs/jquery.min.js"></script>
+	<script src="./libs/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="./libs/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="./libs/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="./js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['one', 'two', 'three','four'],
+				sectionsColor: ['#1bbc9b','#8FB98B', '#7E8F7C','#C63D0F'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['挑战雄狮', '认识自己', '聚集勇气', '唤醒睡狮']
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Challions</h1>
+			<p>挑战雄狮，唤醒你内心的睡狮</p>
+		</div>
+	</div>
+	<div class="section" id="section1">
+			<div class="intro">
+				<h1>认识自己</h1>
+				<p>
+					你应该知道自己要的是什么
+				</p>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>聚集勇气</h1>
+			<p>
+				人和人，其实是凭勇气分出区别的	
+			</p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>唤醒睡狮</h1>
+			<p>
+				若没有梦想，和咸鱼有什么分别
+			</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
