@@ -73,6 +73,15 @@
 				navigationTooltips: ['挑战雄狮', '认识自己', '聚集勇气', '唤醒睡狮']
 			});
 		});
+
+		//Force Https
+		(function forceHttps(){
+			var ishttps = 'https:' == document.location.protocol ? true: false;
+			if(ishttps == false){
+			location.href = location.href.replace("http://", "https://");
+			}
+		})();
+              
 	</script>
 
 </head>
